@@ -1,0 +1,95 @@
+.products {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-block: 100px 0px;
+  row-gap: 50px;
+  .container {
+    h3 {
+      font-size: 31.667px;
+      font-weight: 800;
+      line-height: 131.523%;
+      text-align: center;
+      padding-bottom: 50px;
+    }
+    .row {
+      row-gap: 20px;
+      .col-lg-4 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        > div {
+          position: relative;
+          img {
+            &:nth-of-type(1) {
+              width: 269px;
+              height: 269px;
+            }
+            &:nth-of-type(2) {
+              width: 240.117px;
+              height: 241.148px;
+              position: absolute;
+              left: 50%;
+              top: 110px;
+              transform: translateX(-50%);
+            }
+          }
+          .inf-combo {
+            //   position: relative;
+            padding-block: 80px;
+            span {
+              display: block;
+              &.prime-combo {
+                span {
+                  display: inline-block;
+                }
+              }
+            }
+            .title {
+              display: block;
+              height: 56.667px;
+              margin: 0 auto;
+              text-align: center;
+              font-family: Inter;
+              font-size: 23.333px;
+              font-style: normal;
+              font-weight: 700;
+              line-height: normal;
+            }
+            svg {
+              display: inline-block;
+              margin-block: 10px 17px;
+            }
+            .name_combo {
+              font-size: 16.667px;
+              font-style: normal;
+              font-weight: 400;
+              line-height: 21.667px;
+              color: #656565;
+            }
+            .prime-combo {
+              font-size: 16.667px;
+              font-style: normal;
+              font-weight: 400;
+              line-height: 21.667px;
+              > span {
+                font-size: 23.333px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 26.667px;
+              }
+            }
+            form {
+              .btn {
+                display: inline-block;
+                margin-top: 28px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

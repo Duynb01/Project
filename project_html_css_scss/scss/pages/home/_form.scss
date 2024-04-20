@@ -1,0 +1,106 @@
+.form_submit {
+  padding-block: 100px;
+  .container {
+    display: flex;
+    justify-content: space-between;
+    .inf_form {
+      h5 {
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 26.667px;
+      }
+      form {
+        display: flex;
+        flex-direction: column;
+        row-gap: 23px;
+        padding-block: 26px;
+        > input {
+          width: 100%;
+        }
+        input {
+          display: inline-block;
+          border: 0.833px solid #a3a3a3;
+          height: 46px;
+          border-radius: 6.667px;
+          padding: 13.333px;
+          &::placeholder {
+            font-size: 16px;
+            font-weight: 400;
+            padding: 13.333px 491.667px 13.333px 0;
+          }
+        }
+        .email-phone {
+          display: flex;
+          justify-content: space-between;
+          column-gap: 17.5px;
+          input {
+            width: 100%;
+          }
+        }
+        textarea {
+          border: 0.833px solid #a3a3a3;
+          border-radius: 6.667px;
+          padding: 13.333px;
+          width: 100%;
+          &::placeholder {
+            font-size: 16px;
+            font-weight: 400;
+          }
+        }
+        .btn {
+          position: relative;
+          width: 128px;
+          height: 47px;
+          left: 100%;
+          transform: translateX(-100%);
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 1399.98px) {
+  // Selector CSS
+}
+@media screen and (max-width: 1199.98px) {
+  // Selector CSS
+  .form_submit {
+    .container {
+      justify-content: space-evenly;
+    }
+  }
+}
+@media screen and (max-width: 991.98px) {
+  // Selector CSS
+  .form_submit {
+    .container {
+      flex-direction: column;
+      img {
+        display: inline-block;
+        width: 60vw;
+        text-align: center;
+        margin: 0 auto;
+      }
+      .inf_form {
+        padding-top: 50px;
+        width: 80vw;
+        margin: 0 auto;
+        h5 {
+          text-align: center;
+          font-size: 25px;
+        }
+        form {
+          .btn {
+            left: 50%;
+            transform: translateX(-50%);
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 767.98px) {
+  // Selector CSS
+}
+@media screen and (max-width: 575.98px) {
+  // Selector CSS
+}

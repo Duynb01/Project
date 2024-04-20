@@ -1,0 +1,97 @@
+.structure {
+  padding-block: 50px;
+  position: relative;
+  .container {
+    h4 {
+      text-align: center;
+      font-size: 31.667px;
+      font-weight: 800;
+      line-height: 131.523%;
+      width: 80vw;
+      margin: 0 auto;
+    }
+    > p {
+      text-align: center;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 20.417px;
+      width: 70vw;
+      margin: 24px auto 50px;
+    }
+    .wrap-inf_structure {
+      display: flex;
+      column-gap: 25px;
+      justify-content: center;
+      flex-wrap: wrap;
+      row-gap: 25px;
+      .inf-structure {
+        justify-content: center;
+        align-items: center;
+        width: 345.833px;
+        height: 359.167px;
+        position: relative;
+        z-index: 3;
+        background-color: #fff;
+        border-radius: 8.333px;
+        img {
+          width: 100%;
+          border-radius: 8.333px;
+        }
+        .inf {
+          margin-top: 24px;
+          margin-left: 27.5px;
+          h5 {
+            text-shadow: 0px 3.333px 3.333px rgba(0, 0, 0, 0.25);
+            font-size: 20px;
+            font-weight: 600;
+            line-height: 26.667px;
+            color: #e05000;
+          }
+          p {
+            width: 231.774px;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 20.417px;
+          }
+        }
+      }
+    }
+  }
+  .row_background {
+    position: absolute;
+    background-color: #fff0e7;
+    width: 100vw;
+    height: 360.833px;
+    left: 0;
+    bottom: -70px;
+    z-index: 1;
+  }
+}
+
+@media screen and (max-width: 1199.98px) {
+  // Selector CSS
+}
+@media screen and (max-width: 991.98px) {
+  // Selector CSS
+}
+@media screen and (max-width: 767.98px) {
+  .structure {
+    .container {
+      .wrap-inf_structure {
+        .inf-structure {
+          background-color: #fff0e7;
+          height: 100%;
+          .inf {
+            margin-bottom: 20px;
+          }
+        }
+      }
+    }
+    .row_background {
+      display: none;
+    }
+  }
+}
+@media screen and (max-width: 575.98px) {
+  // Selector CSS
+}

@@ -1,0 +1,46 @@
+.outstanding {
+  padding-block: 200px 100px;
+  .container {
+    .row {
+      row-gap: 39px;
+      .col-lg-4 {
+        .outstanding_1 {
+          display: flex;
+          column-gap: 16px;
+          align-items: flex-start;
+          justify-content: center;
+          .inf-outstanding_1 {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 6.667px;
+            h5 {
+              font-size: 20px;
+              font-weight: 600;
+              line-height: 26.667px;
+            }
+            > p {
+              width: 216.667px;
+              height: 97.5px;
+              font-size: 17px;
+              font-weight: 500;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 991.98px) {
+  .outstanding {
+    padding-block: 100px 100px;
+  }
+  // Selector CSS
+}
+@media screen and (max-width: 767.98px) {
+  .outstanding {
+    padding-block: 50px 50px;
+  }
+  // Selector CSS
+}

@@ -1,0 +1,175 @@
+.achievement {
+  padding-block: 150px 100px;
+
+  .container {
+    .inf-achievement {
+      display: block;
+      margin: 0 auto 115px;
+      h2 {
+        width: 80vw;
+        text-align: center;
+        font-family: Inter;
+        font-size: 31.667px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: 131.523%;
+        margin: 0 auto 20px;
+      }
+      p {
+        width: 643.333px;
+        text-align: center;
+        font-family: Inter;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 20.417px;
+        margin: 0 auto;
+      }
+    }
+    .number-achievement {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      column-gap: 22px;
+      > svg {
+        position: absolute;
+        display: block;
+        z-index: 1;
+        width: 235px;
+        height: 235px;
+        &:nth-of-type(1) {
+          left: 0;
+          top: -90px;
+        }
+        &:nth-of-type(2) {
+          right: 0;
+          bottom: -90px;
+        }
+      }
+      > div {
+        position: relative;
+        flex-shrink: 0;
+        border-radius: 3.333px;
+        box-shadow: -5.833px 8.333px 72.5px 0px rgba(54, 54, 54, 0.12);
+        z-index: 4;
+        background-color: #fff;
+        svg {
+          position: absolute;
+          display: block;
+          padding: 15px;
+          background-color: #fff0e7;
+          width: 83.333px;
+          height: 83.333px;
+          border-radius: 10px;
+          top: 33px;
+          left: 33px;
+        }
+        > div {
+          position: absolute;
+          width: 222.5px;
+          display: flex;
+          flex-direction: column;
+          row-gap: 24px;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -20%);
+          span {
+            display: inline-block;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 30.833px;
+          }
+          .quantity {
+            font-family: Inter;
+            font-size: 43.333px;
+            font-style: normal;
+            font-weight: 800;
+            line-height: normal;
+          }
+        }
+      }
+      .family,
+      .province {
+        width: 294.167px;
+        height: 337.5px;
+      }
+      .restaurant {
+        width: 342.5px;
+        height: 392.5px;
+        svg {
+          background-color: #f2ffec;
+          top: 60.5px;
+        }
+        > div {
+          width: 274.167px;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 1199.98px) {
+  .achievement {
+    .container {
+      .number-achievement {
+        > svg {
+          display: none;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 991.98px) {
+  .achievement {
+    row-gap: 20px;
+    .container {
+      .number-achievement {
+        display: flex;
+        flex-direction: column;
+        row-gap: 15px;
+        > div {
+          width: 100% !important;
+          height: 300px !important;
+          > svg {
+            top: 50% !important;
+            left: 50% !important;
+            transform: translate(-50%, -150%);
+          }
+          > div {
+            width: 100% !important;
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 767.98px) {
+  .achievement {
+    .container {
+      .inf-achievement {
+        h2 {
+          font-size: 25px;
+        }
+        p {
+          width: 80vw;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 575.98px) {
+  .achievement {
+    .container {
+      .inf-achievement {
+        h2 {
+          font-size: 25px;
+        }
+        p {
+          width: 80vw;
+        }
+      }
+    }
+  }
+}
